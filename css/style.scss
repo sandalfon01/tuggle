@@ -60,4 +60,23 @@
             color: #fff;
         }
     }
+    &.active .content{
+        opacity: 1;
+        transition-delay: 0.5s;
+        transform: scale(1);
+    }
+    &.active .toggleBtn{
+        bottom: -90px;
+        transform: rotate(135deg);
+        background-color: #ff5a57;
+    }
+    &.active{
+        &::before{
+            opacity: 1;
+            transition-delay: 0.5s;
+        }
+        width: 400px;
+        height: 400px;
+        transition-delay: 0.5s;
+    }
  }
